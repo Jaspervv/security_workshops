@@ -50,7 +50,7 @@ Je ziet nu twee netwerkinterfaces op de router:
 - 💻 *LAN-interface:* Gebruikt voor directe communicatie binnen het lokale netwerk.
 - 🌐 *WAN-interface:* Gebruikt voor gecontroleerde toegang tot het internet voor machines binnen het lokale netwerk.
 
-**Stap 4**: Klik op "Edit" (bewerken) en wijzig alleen de netwerkinterface "Default First Network" naar studentnet0. Klik vervolgens op "Submit".
+**Stap 4**: Klik op "Edit" (bewerken) en wijzig alleen de netwerkinterface "Default First Network" naar studentnet0. Klik vervolgens op het groene vinkje en dan op "Submit".
 
 **Stap 5:** Klik weer op pLab-jouw studentnummer klik vervolgens op het tandwielpictogram en kies “Power cycle”.
 
@@ -69,11 +69,9 @@ Je bent nu in de terminal van je router. De twee interfaces die we zojuist hebbe
 
 **Stap 11:** Voer 'y' in om verder te gaan met het proces. 
 
-**Stap 12:** Voer '7' in, druk op Enter en voer vervolgens 'ping google.nl' in. Als de ping succesvol is, zie je dat er 3 pakketten zijn aangekomen. Als dit niet het geval is, vraag dan om hulp, omdat er mogelijk iets fout is gegaan tijdens de configuratie.
+**Stap 12:** Voer '7' in, druk op Enter en voer vervolgens 'google.nl' in. Als de ping succesvol is, zie je dat er 3 pakketten zijn aangekomen. Als dit niet het geval is, vraag dan om hulp, omdat er mogelijk iets fout is gegaan tijdens de configuratie.
 
-**Stap 13:** In de pfsense terminal staat informatie over je ip-adres. In je terminal vind je de regel: *Wan -> vmx0 -> 145.xxx.xxx.xxx. Noteer of onthoud het ip-adres, deze heb je bij de volgende opdracht nodig.
-
-**Stap 14:** Voer nu een update uit met ‘13’ en daarna een reboot met ‘5’. 
+**Stap 13:** Voer nu een update uit met ‘13’ en daarna een reboot met ‘y’. 
 
 
 **✔️ Opdracht 2 is klaar!**
@@ -81,7 +79,7 @@ Je bent nu in de terminal van je router. De twee interfaces die we zojuist hebbe
 ## Opdracht 3 Domeinadres Opvragen 
 Apparaten binnen het interne netwerk communiceren via de router en de LAN-interface. Elk apparaat heeft een privé-IP-adres, herkenbaar aan "192.168.xxx.xxx". De router, met een publiek IP-adres (hier 145.xxx.xxx.xxx), fungeert als gateway naar het internet. Om de toegang tot de website te vereenvoudigen, moet een domeinnaam worden aangevraagd. Anderzijds is toegang tot de website later alleen mogelijk via het minder gebruiksvriendelijke publieke IP-adres (145.xxx.xxx.xxx).
 
-**Vul het formulier in via [deze link](http://hbo-ict.org/proposename)! Je moet het **publieke IP-adres** van je router invullen, dat dus **145.xxx.xxx.xxx** is (genoteerd bij de vorige opdracht), en een **domeinnaam** opgeven. Laat je creativiteit vrij, maar houd het wel netjes 😊.**
+**Vul het formulier in via [deze link](http://hbo-ict.org/proposename)! Je moet het **publieke IP-adres** van je router invullen, dat dus **145.xxx.xxx.xxx** is, en een **domeinnaam** opgeven. Laat je creativiteit vrij, maar houd het wel netjes 😊.**
 
 **✔️ Opdracht 3 is klaar!**
 
@@ -101,7 +99,7 @@ De opdracht is opgesplitst in drie delen:
 
 **Stap 3:** Klik op het tabblad "Network".
 
-**Stap 4:** Klik op "Edit" (bewerken) en wijzig alleen de netwerkinterface "Default First Network" naar studentnet0. Klik vervolgens op "Submit".
+**Stap 4:** Klik op "Edit" (bewerken) en wijzig alleen de netwerkinterface "Default First Network" naar studentnet0. Klik vervolgens op het groene vinkje en dan op "Submit".
 
 **Stap 5:** Klik weer op pLab-<jouw studentnummer> klik vervolgens op het tandwielpictogram en kies “Power cycle”.
 
@@ -113,7 +111,7 @@ De opdracht is opgesplitst in drie delen:
 
 **Stap 8:** Type ‘passwd’ en verander je wachtwoord. **(Niet vergeten!)**
 
-**Stap 9:** Controleer of je verbinding hebt tot het internet ping google.nl (ctrl Z om te stoppen).
+**Stap 9:** Controleer of je verbinding hebt tot het internet 'ping google.nl' (ctrl Z om te stoppen).
 
 **Stap 10:** Type het volgende om een nieuwe gebruiker aan te maken
  sudo adduser <student number>  (vergeet je wachtwoord niet!)
@@ -137,7 +135,7 @@ De opdracht is opgesplitst in drie delen:
 
 **Stap 16:** Type ‘ip address’ om de privéadres van de Debian te zien zou moeten beginnen met 192.168.
 
-**✔️ Opdracht 5 is klaar**
+**✔️ Opdracht 4 is klaar**
 
 ## Opdracht 5 Kali Linux configureren
 Je gaat nu de Kali configureren. In tegenstelling tot Debian heeft Kali Linux wel een grafische interface. Dit is omdat je deze machine gaat gebruiken om later je firewallregels in te stellen en de beveiliging van je Debian te testen met verschillende hackingtools.
@@ -180,7 +178,7 @@ In deze taak ga je port-forwarding regels instellen op de pfSense-firewall, zoda
 
 **Stap 3:**  Klik op 'Advanced' en accepteer de risico's.
 
-**Stap 4:** Log in met de gebruikersnaam 'admin' en het wachtwoord 'pfsense'.
+**Stap 4:** Log in met de gebruikersnaam 'admin' en het wachtwoord 'pFsense'.
 
 **Stap 5:** Nadat je bent ingelogd, zie je een rode waarschuwing om je wachtwoord te wijzigen. Klik erop, verander het wachtwoord en sla de wijzigingen op.
 
